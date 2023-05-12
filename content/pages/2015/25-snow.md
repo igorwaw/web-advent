@@ -39,7 +39,7 @@ while n<10
         col=1
 ```
 
-OK, looks like that already covers all cases - and some of them twice! There's no need to check for maxcol, whenever we get to the 1st row, we are always at the last column. Let's simplify already. Also, we need to calculate the code while, now we're only moving on the diagonals. Let's generate first 10 codes and compare with the sample:
+OK, looks like that already covers all cases - and some of them twice! There's no need to check for maxcol, whenever we get to the 1st row, we are always at the last column. Let's simplify already. Also, we need to calculate the code, now we're only moving on the diagonals. Let's generate first 10 codes and compare with the sample:
 
 ```python
 row=col=maxrow=n=1
