@@ -25,7 +25,7 @@ repetition. Next, I used match/case. Much better! There's still some repetition,
 
 ## Python feature: exceptions
 
-I used one Python feature that I haven't used in 2016 puzzles yet: exceptions. Exceptions are used in many
+I used one Python feature that I haven't used in 2015 puzzles yet: exceptions. Exceptions are used in many
 programming languages, usually to handle error conditions. But here I'm using them for flow control, like this:
 
 ```python

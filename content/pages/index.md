@@ -15,11 +15,17 @@ save_as: index.html
 
 I solved most tasks with **Python**. It's the easiest choice, as the language provides useful data structures (eg. sets and 2D arrays are often needed), text processing tools (regexps, strings as arrays of characters, splitting) and mathematical functions.
 
-Python has been evolving fast in the recent years and Linux distributions weren't always able to keep up. Therefore I decided to limit usage of the newest
-language features. But if they made the code much more readable and concise - I used them and documented it. Several tasks require Python 3.7 (dataclasses, my
-favourite feature of modern Python), 3.8 (walrus operator) or even 3.10 (match/case). I also drew the line at Python 3.6, which was released in 2016 and has numerous additions, such as f-strings and variable annotations. Some programs might work with older versions of Python 3, but I made absolutely no effort to ensure it.
+Python has been evolving fast in the recent years and Linux distributions weren't always able to keep up. 
+But I think some of the new features, such as dataclasses and match/case are awesome. They make the code
+both shorter and more readable. I decided to use them when they seemed a good choice, but document it,
+in case you're stuck with an old version. Several tasks require Python 3.7 (dataclasses), 3.8 (walrus
+operator) or even 3.10 (match/case). I also drew the line at Python 3.6, which was released in 2016 and
+has numerous additions, such as f-strings and variable annotations. Some programs *might* work with older
+versions of Python 3, but I made absolutely no effort to ensure it.
 
-For the extra challenge, I used **C** and **C++** for some tasks. Modern C++ actually provides much of the same tools as Python, but in a less convenient package. C only works for the simplest tasks for me, more complex ones would take me weeks instead of hours.
+For the extra challenge, I used **C** and **C++** for some tasks. Modern C++ actually provides much of
+the same tools as Python, but in a less convenient package. C only works for the simplest tasks for me,
+more complex ones would take me weeks instead of hours.
 
 ![Python](https://img.shields.io/badge/python-%3E%3D3.10-blue)
 ![C](https://img.shields.io/badge/C-C99-green)
