@@ -9,7 +9,7 @@ Series: 2016
 We have a compression algorithm: our input data contains markers such as (10x2) meaning take the next 10 characters and repeat them 2 times. "Compressed data" can also contain markers, but they should be skipped. We need to get the length of uncompressed file, skipping any whitespace.
 
 Two things to consider: do we really decompress the data or just calculate the length? It's quite possible to calculate without reconstructing the string,
-eg. marker (15x3) adds 14 characters (3*15 minus the original 15 minus the length of the marker 6). It is however possible that part 2 will require actually decompressing the data. I decided to take my chances.
+eg. marker (15x3) adds 14 characters (3*15 minus the original 15 minus the length of the marker 6). It is however possible that part 2 will require actually decompressing the data. I decided to take my chances and don't decompress.
 
 Second consideration: how to parse the data? Two solutions come to mind immediately. First way, use regular expressions to find possible markers (easy) and - based on their position in the input - decide whether they are real markers or they are inside the data block of another marker. Second way, a state machine approach: parse the input character by character and do a different thing depending on the current state: starting with the state "no special block", after opening bracket switch to state "length", after "x" - "repeat", after closing bracket - "data", and after specified number of characters back to "no special block". This will automatically deal with markers inside data blocks, but is generally more complicated. Let's try the regexp solution.
 

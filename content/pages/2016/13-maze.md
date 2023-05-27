@@ -67,7 +67,7 @@ The easiest way to write it is:
 ```python
     for deltax in [-1, 0, 1]:
         for deltay in [-1, 0, 1]:
-            if abs(deltax)==abs(deltay): # don't go diagonal
+            if abs(deltax)==abs(deltay):
                 continue
 ```
 
