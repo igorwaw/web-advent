@@ -4,7 +4,7 @@ Status: hidden
 Category: Python
 Series: 2016
 
-Title is a reference to a Taxi Metric, but you don't even need to know what's that.
+Title is a reference to a Taxicab Metric, but you don't even need to know what's that.
 As usual, first days of Advent of Code are simple.
 
 We're moving on a 2D grid. We need to keep track of visited point, set is an obvious structure

@@ -58,7 +58,7 @@ One elf keeps its present. If there are 2, fist one wins. That's just a special 
 needs to be dealt with `if n<3`. What do we have next? For 3 and 9 we're getting 3 and 9.
 These numbers are powers of 3. Concidence?
 
-So for our number elves, we need to find the nearest power of 3 that's smaller then that.
+So for our number of elves, we need to find the nearest power of 3 that's smaller then that.
 Logarithm will give us the exponent (hey, I still remember something from high school maths!)
 and luckily Python has a function for calculating logarithm with an arbitrary base, not
 only natural logarithm like many languages. That saved me a terrible burden of replacing a base-3

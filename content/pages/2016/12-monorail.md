@@ -8,7 +8,7 @@ We need to simulate a computer with a very simple CPU architecture: 4 registers,
 to day 23 from 2015, in fact I copied some code. But at this point I learned how to use match/case more effectively,
 not only to match strings, but also check arguments and extract them. Another trick I should have discovered sooner:
 sometime the argument could be either a number or a register. How do we check for that in the parser? Simple, we don't,
-we just run the command that reads the string, tries to convert it to int and if that fails - reads the register.
+we just run the function that reads the string, tries to convert it to int and if that fails - reads the register.
 
 ```python
 #!/usr/bin/python3

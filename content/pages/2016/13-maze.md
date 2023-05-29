@@ -79,7 +79,7 @@ We also need to skip walls: `if not is_empty(newpoint): continue`
 
 - starting point has a distance of 0 from the starting point (obviously)
 - all other points are initialized with infinity (in practice, a value much larger then expected will do)
-- new point gets a distance 1 larger then the previous point, but here's an important point: only if it's smaller then the previously recorded distance (we can get to a point more than once and we're only interested in the shortest path)
+- new point gets a distance 1 larger then the previous point, but here's an important thing: only if it's smaller then the previously recorded distance (we can get to a point more than once and we're only interested in the shortest path)
 
 I used a dict of Points to keep distances and wrapped them in a class for convenience. I later added a function that prints
 the map.

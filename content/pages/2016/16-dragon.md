@@ -8,7 +8,7 @@ We need to generate data that would fill a disk of a specific size,
 than calculate the checksum. Algorithm for generating and for checksum
 is described, unusual but nothing complicated.
 
-For part 1, disk has a size 272 and for part 2 - 35651584. This year, many
+For part 1, disk has a size 272 and for part 2: 35651584. This year, many
 problems were easy to solve with a simple algorithm for part 1, but part 2
 made a problem space much bigger, requiring a clever solution. If that was
 supposed to be one of them, it didn't work. Sure, I guess there is a way

@@ -78,8 +78,8 @@ functions operating on it. But I decided that a list of sets is good enough.
 * If there are no microchips on the floor, the radiation won't harm anything,
 * If there are both chips and generators on the floor, every chip needs to have a coresponding generator
 
-First condition is easy to check. Third condition will be check implicitly by the second condtion
-(we're iterating over microchips, if there are none, there's nothing to iterate on). But the second
+First condition is easy to check. Second condition will be checked implicitly by the third condtion
+(we're iterating over microchips, if there are none, there's nothing to iterate on). But the third
 one is tricky. Now, it was easy when I had a separate list of chips and generators:
 
 ```python
@@ -187,7 +187,7 @@ function to the Gamestate class:
 ## New Python features: filter and lambda
 
 **Filter** is a function that selects elements from an iterable object (list, set, tuple etc.). It takes two
-elements, first is a function that returns True or False, second is an iterable. We can use a fully fledged
+arguments, first is a function that returns True or False, second is an iterable. We can use a fully fledged
 function here, but lambda is a more popular choice for simple functions.
 
 **Lambda** is a small, anonymous function. The syntax might look a bit awkward in the beginning (believe me,
