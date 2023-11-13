@@ -25,7 +25,7 @@ Now, the instruction says we need to divide packages using the following conditi
 - first container has the smallest possible number of packages,
 - if there are several ways to satisfy the second condition, choose one with the smallest QE.
 
-So, target weight is 1/3 of the total weight. Let's hope it divides evenly. Let's also check number of packages and total weight.
+So, target weight is 1/3 of the total weight. Let's hope it divides evenly. Let's also check the number of packages and the total weight.
 
 ```python
 weight=sum(packages)//3
@@ -58,7 +58,7 @@ print(f"Part 1: {min(qe)}")
 
 ## Part 2
 
-So now we have to divice packages between 4 containers instead of 3. The solution is obvious: I need to put the code into a function, taking number of containers as a parameter, then call it twice.
+So now we have to divide packages between 4 containers instead of 3. The solution is obvious: I need to put the code into a function, taking number of containers as a parameter, then call it twice.
 
 While I'm at it, let's shorten the code. Unusually for me, I used list comprehension instead of for loops in most places because it was obvious for me. The only exception is input processing.
 

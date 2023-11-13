@@ -5,7 +5,7 @@ Category: C
 Series: 2015
 
 Santa is trying to deliver presents in a large apartment building. He starts on the ground floor - floor 0 - and needs to travel up and down. 
-The instructions are a list of brackets, ( means go up and ) means go down. We need to find:
+The instructions are a list of brackets, "(" means go up and ")" means go down. We need to find:
 
 - For part 1: what is the last floor?
 - For part 2: at which instruction Santa will enter the basement for the first time?

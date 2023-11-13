@@ -18,8 +18,7 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Main', 'https://too-many-machines.com/'),
          ('Selfhosting', 'https://selfhosting.too-many-machines.com/'),
-         ('Advent of Code', 'https://advent.too-many-machines.com/'),
-         ('Random stuff', 'https://random.too-many-machines.com/'),)
+         ('Advent of Code', 'https://advent.too-many-machines.com/'),)
 
 # # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),

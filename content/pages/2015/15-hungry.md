@@ -10,7 +10,7 @@ of ingredients, we need to maximize the score (ignoring calories for part 1, get
 exactly 500 calories for part 2).
 
 There are many ways to mix the ingredients, from (100, 0, 0, 0) to
-(0, 0, 0, 100). Specificaly, there are 176847 ways. Problem space is mall enough
+(0, 0, 0, 100). Specificaly, there are 176847 ways. Problem space is small enough
 for brute force to be useful, large enough that it makes sense to optimize.
 
 The puzzle calls for some combined combinatorics (pun intended).

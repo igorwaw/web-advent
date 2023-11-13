@@ -51,7 +51,7 @@ and `permutations(cities)` will generate an iterable object containing:
 
 ## Possible optimizations
 
-* No need to store the length of every route, we can only store it if it's shortest/longest then the previous ones.
+* No need to store the length of every route, we only need to store it if it's shortest/longest then the previous ones.
 * Every route has the same length in both directions, while the code generates all permutations. So, for
 the example data we check Dublin -> London -> Belfast and Belfast -> London -> Dublin. We could cut
 the problem size in half by filtering out those.

@@ -9,7 +9,7 @@ them. Emulating strange hardware is my favourite part of Advent of Code.
 But this one was too simple.
 
 I used Numpy. One of the instructions is rotate, Numpy provides function
-roll that does just that. I also packed most of the code in a class.
+"roll" that does just that. I also packed most of the code in a class.
 Both aren't really needed for a simple task like this.
 
 ```python
@@ -28,7 +28,7 @@ class Display:
     def __init__(self, _width:int, _height: int):
         self.height=_height
         self.width=_width
-        self.screen=np.zeros((self.height, self.width))  # use screen[y][x] when indexing2
+        self.screen=np.zeros((self.height, self.width))  # use screen[y][x] when indexing
 
     def count_pixels(self):
         return np.count_nonzero(self.screen)

@@ -5,7 +5,7 @@ Category: Python
 Series: 2016
 
 We have list of triangles, or "triangles", and we need to find which ones are possible.
-In euclidean geometry, that is, not something from Cthulhu mythos. Easy. Slide twist for
+In euclidean geometry, that is, not something from Cthulhu mythos. Easy. Slight twist for
 part 2 - the dimensions are given in columns, not in rows.
 
 ```python

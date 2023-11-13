@@ -6,7 +6,7 @@ Series: 2016
 
 We have some blocklists and need to find IPs outside of them. IPs are 32-bit
 numbers here, not the usual 4-octet notation. Good, that's easier to compare.
-Blocklists re given in no particular order, sorting them is an obvious first
+Blocklists are given in no particular order, sorting them is an obvious first
 step. They can also overlap.
 
 Once again it's an exercise in optimization. There are some nice, easy to code

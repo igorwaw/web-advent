@@ -4,10 +4,8 @@ Status: hidden
 Category: Python
 Series: 2016
 
-Input parsing is a bit uncommon. Usually we read rows which is very
-straightforward, this time we need columns.
-
-Than it's the Counter class again.
+We need to find the most common and the least common letter in each column
+of the input. Counter class again.
 
 ```python
 #!/usr/bin/python3

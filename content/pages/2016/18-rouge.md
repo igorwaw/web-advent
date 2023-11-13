@@ -4,7 +4,7 @@ Status: hidden
 Category: Python
 Series: 2016
 
-A simple cellular automata - like Conway's Life, but in one dimension.
+A simple cellular automaton - like Conway's Life, but in one dimension.
 Nothing special here. Input data has "^" and "." characters, I changed
 them to 1s and 0s for easy calculation. 
 
