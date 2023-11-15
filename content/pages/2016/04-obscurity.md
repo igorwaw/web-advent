@@ -1,4 +1,4 @@
-Title: 2016 day 03: Security Through Obscurity
+Title: 2016 day 04: Security Through Obscurity
 Date: 2023-05-27 17:32
 Status: hidden
 Category: Python
@@ -7,7 +7,7 @@ Series: 2016
 Two tasks. Part 1 was about calculating a checksum using an unusual algorithm. Two slightly
 interesting things. Counter object, which greatly simplified the code. And a way to sort dict
 descending by value, then ascending by key: `sorted(lettercounter, key=lambda x: (-x[1],x[0]))`.
-Get it? Let's start from the inside. We define a lamba function for key, it returns a tuple.
+Get it? Let's start from the inside. We define a lambda function for key, it returns a tuple.
 x[1] is the value, - for reversing the sort order. Then x[0] is the key.
 
 Part 2 was a simple cypher - addition, subtraction and modulo is all that's needed.

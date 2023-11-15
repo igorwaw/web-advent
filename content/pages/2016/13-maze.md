@@ -47,7 +47,7 @@ A classic BFS algorithm should work. We need a queue of points to check, we need
 the points already checked and we need a starting point. Here it goes:
 
 ```python
- start_point=Point(1,1)
+start_point=Point(1,1)
 visited=set()
 to_check=deque()
 to_check.append(start_point)

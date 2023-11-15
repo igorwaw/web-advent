@@ -23,7 +23,7 @@ We have a row and column, which number is that? I suppose there is a mathematica
 But computers are really fast at simple arithmetics, so let's just iterate until we find one. We're starting at the first number which is at row 0, column 0. I'll also keep track of maximum row and column reached so far and I'll use the full loop. Perhaps later I'll be able to simplify. Let's try first 10 codes to begin.
 
 ```python
-row=col=maxrow=maxol=n=1
+row=col=maxrow=maxcol=n=1
 while n<10
     if (row==maxrow and col==maxcol):
         row+=1

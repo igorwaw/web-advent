@@ -14,6 +14,8 @@ Other than that, it's simple. Match/case to run the right command and some strin
 of that directly into match/case. To be fair, I could even remove the whole class without affecting the readability
 too much.
 
+I later learned that Python's match is way more powerful and the code could be shorter and more readable (see 2016 day 12 for comparison), but let's leave it this way.
+
 ```python
 #!/usr/bin/python3
 

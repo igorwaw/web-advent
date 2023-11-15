@@ -6,7 +6,7 @@ Series: 2016
 
 ## Part 1
 
-Finding path in a vault. At this point I wrote so many programs to find
+Finding a path in a vault. At this point I wrote so many programs to find
 a shortest path in a 2D grid, I could probably do it in my sleep. There is
 a slight twist: a set of doors open/closed depends on the hash of path taken.
 That means there's no need to store "already visited states" as I usually do

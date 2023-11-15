@@ -7,7 +7,7 @@ Series: 2015
 We are given a list of distances between several cities. Santa needs to visit all of them exactly once
 using shortest (part 1) and longest (part 2) route possible.
 
-What a gentle introduction to graph theory! Every Computer Science graduate will instantly recognize
+What a gentle introduction to graph theory! Every computer science graduate will instantly recognize
 it as a Travelling Salesman Problem. It's a well known problem with many real-world applications - not
 only the obvious one of finding a shortest route between cities, but also about placing data in the compute
 cluster, and optimal use of pretty much everything, from storage shelves to industrial robots. It's

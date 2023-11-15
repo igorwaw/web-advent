@@ -6,7 +6,7 @@ Series: 2015
 
 ## Part 1
 
-We've got 1 million lights in a 1000x1000 grid and instructions to turn on/turn of/toggle some lights. The puzzle only requires
+We've got 1 million lights in a 1000x1000 grid and instructions to turn on/turn off/toggle some lights. The puzzle only requires
 to count how many lights are on, but I couldn't resist the temptation to add visualization. I used Pygame library, or rather a
 very small subset of it: drawing rectangles, drawing single pixels, waiting for event (just one - quit) and delay.
 

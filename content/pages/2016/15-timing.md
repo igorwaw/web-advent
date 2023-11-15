@@ -50,7 +50,7 @@ one of them is aligned, say it has 3 positions. Next time they are both aligned 
 3*17=51 seconds later, so that's the new value of step. Then we find the third disk and so on.
 All our disk sizes are prime numbers.
 
-I didn't code this solution, because at this point something rang a bell. I graduated in Computer Science,
+I didn't code this solution, because at this point something rang a bell. I graduated in computer science,
 meaning at some point I learned a bit about advanced mathematics: number theory, matrices, differential
 equations, you name it. I then forgot much of it as it was 20 years ago and most of this stuff is not needed
 for the daily work (except once in a blue moon it unexpectedly helps to solve a programming problem). But modulo
