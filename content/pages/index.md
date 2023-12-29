@@ -37,7 +37,7 @@ Other modern languages like JavaScript, Ruby, Go or Rust would work too, but I d
 ## Getting help
 
 Is it OK to look at someone elses code? In my opinion, AoC is about two things: learning and having fun. If you're stuck, you get none.
-Looking at someone's code and implementing similar solution at least allows you to learn, and then you're free to go on to other tasks
+Looking at someone's code and implementing similar solution at least allows you to learn, and then you're free to go on to other tasks.
 
 Personally, I always tried to solve the tasks by myself first and in most cases, I managed. Even then I later googled for
 other solutions to see possible improvements. Every year, there are some really hard puzzles that you can't solve without
