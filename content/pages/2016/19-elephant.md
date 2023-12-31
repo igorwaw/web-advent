@@ -54,7 +54,7 @@ Instead, I checked the answer on paper for some low numbers to try and find a pa
 20 : 13
 ```
 
-One elf keeps its present. If there are 2, fist one wins. That's just a special case that
+One elf keeps its present. If there are 2, first one wins. That's just a special case that
 needs to be dealt with `if n<3`. What do we have next? For 3 and 9 we're getting 3 and 9.
 These numbers are powers of 3. Concidence?
 
