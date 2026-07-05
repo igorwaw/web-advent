@@ -1,0 +1,46 @@
+---
+title: "2016 day 03: Squares With Three Sides"
+date: 2023-05-27T17:32:00
+draft: false
+tags: ["python"]
+---
+
+We have list of triangles, or "triangles", and we need to find which ones are possible.
+In euclidean geometry, that is, not something from Cthulhu mythos. Easy. Slight twist for
+part 2 - the dimensions are given in columns, not in rows.
+
+```python
+#!/usr/bin/python3
+
+INPUTFILE="03-input.txt"
+
+#part 1
+num_triangles=0
+with open(INPUTFILE) as f:
+    for line in f:
+        sides=[int(i) for i in line.split()]
+        sides.sort()
+        if sides[0]+sides[1]>sides[2]:
+            num_triangles+=1
+print("Part 1: ", num_triangles)
+
+#part 2
+triangles=[]
+num_triangles=0
+with open(INPUTFILE) as f:
+    lines=[]
+    for line in f:
+        lines.append([ int(i) for i in line.split() ])
+        if len(lines)>=3:
+            # process a triangle
+            triangles.extend([ lines[0][i], lines[1][i], lines[2][i] ] for i in range(3))
+            lines=[]
+#print(triangles)
+for sides in triangles:
+    #print(sides)
+    sides.sort()
+    if sides[0]+sides[1]>sides[2]:
+        num_triangles+=1
+print("Part 2: ", num_triangles)
+
+```
