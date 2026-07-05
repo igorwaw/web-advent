@@ -7,12 +7,12 @@ tags: ["python"]
 
 We're baking cookies. We have 4 ingredients which have 5 numeric properties
 (capacity, durability, flavor, texture and calories) . Our cookie takes 100 spoons
-of ingredients, we need to maximize the score (ignoring calories for part 1, getting
+of ingredients, we need to maximise the score (ignoring calories for part 1, getting
 exactly 500 calories for part 2).
 
 There are many ways to mix the ingredients, from (100, 0, 0, 0) to
-(0, 0, 0, 100). Specificaly, there are 176847 ways. Problem space is small enough
-for brute force to be useful, large enough that it makes sense to optimize.
+(0, 0, 0, 100). Specifically, there are 176847 ways. Problem space is small enough
+for brute force to be useful, large enough that it makes sense to optimise.
 
 The puzzle calls for some combined combinatorics (pun intended).
 First, generate all **combinations with replacement** of numbers from 0 to 100

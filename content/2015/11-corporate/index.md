@@ -10,7 +10,7 @@ is very similar to day 5, finding naughty strings.
 
 ## New Python features
 
-**zip** is a function that allows to iterate on two or more sequences at once. Usually it's used over
+**zip** is a function that allows you to iterate on two or more sequences at once. Usually it's used over
 two or more lists, dicts, tuples etc. Example:
 
 ```python
@@ -29,14 +29,14 @@ Area code for Germany is 49
 ```
 
 Here I used it like this: `for ch1, ch2, ch3 in zip (text, text[1:], text[2:])` which means it combines 3 sequences:
-some string, the same string starting from the second characted and the same string starting from the 3rd character.
+some string, the same string starting from the second character and the same string starting from the 3rd character.
 On the first iteration, it returns characters 0, 1, 2; on the second iteration 1, 2, 3 etc. Note that the sequences
-have different length, second and third one are 1 and 2 characters shorter from the first one. It doesn't matter for
+have different lengths, second and third one are 1 and 2 characters shorter than the first one. It doesn't matter for
 the zip function, it just ends when the shortest sequence ends.
 
 **ord** returns the Unicode (or ASCII, it's the same in this case) code of a character, **chr** is an opposite
 function that returns character for the given code. In C and C++ I could just do arithmetic operations directly
-on the characters, suprisingly Python typing is sometimes more strict, you can't just treat character as a number
+on the characters, surprisingly Python typing is sometimes more strict, you can't just treat character as a number
 without explicitly converting it first.
 
 ## Code

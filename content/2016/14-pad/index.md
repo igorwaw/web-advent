@@ -8,7 +8,7 @@ tags: ["python"]
 We need to generate 64 MD5 hashes. The hash is correct if it has 3 of the same characters in a row AND in the next 1000 hashes
 there's one that has the same character repeated 5 times. Easy. 
 
-It's clear to see that naive solution would calculate same hash many times. There are many clever ways to overcome it, eg. we can
+It's clear to see that a naive solution would calculate the same hash many times. There are many clever ways to overcome it, eg. we can
 start by computing all the hashes and store them in a lookup table, or we can have some sort of a moving window and keep 1000 recent
 hashes. But Python has a much simpler solution: we can cache results of the function by using just one import statement:
 `from functools import cache` and prepending the function with a decorator `@cache`.

@@ -5,14 +5,14 @@ comments: false
 ---
 
 We have a villain this year - Easter Bunny. We need to infiltrate
-it's HQ which might require some pathfinding skills, we will crack
+its HQ which might require some pathfinding skills, we will crack
 their codes and work with unusual hardware. That was fun.
 
-I experimented with Github Copilot for the first 4 tasks, then
+I experimented with GitHub Copilot for the first 4 tasks, then
 I disabled it. I didn't even wait till the end of my trial.
 It only saves me a few seconds of typing for repeatable simple
 things like opening files or iterating. When I'm into writing
-a real algorithms, the suggestions are usually wrong, but 
+a real algorithm, the suggestions are usually wrong, but 
 distracting.
 
 - [Day 1: No Time for a Taxicab](/2016/01-taxi/)
@@ -32,7 +32,7 @@ distracting.
 - [Day 15: Timing is Everything](/2016/15-timing/)
 - [Day 16: Dragon Checksum](/2016/16-dragon/)
 - [Day 17: Two Steps Forward](/2016/17-vault/)
-- [Day 18: Like a Rogue](/2016/18-rouge/)
+- [Day 18: Like a Rogue](/2016/18-rogue/)
 - [Day 19: An Elephant Named Joseph](/2016/19-elephant/)
 - [Day 20: Firewall Rules](/2016/20-firewall/)
 - [Day 21: Scrambled Letters and Hash](/2016/21-scramble/)

@@ -11,7 +11,7 @@ The instructions are a list of brackets, "(" means go up and ")" means go down. 
 - For part 1: what is the last floor?
 - For part 2: at which instruction Santa will enter the basement for the first time?
 
-That's clearly just a warm-up. All the operations are: reading one character/byte at time, comparison, incrementing/decrementing. I could solve it in any programming languge I know and possibly in some languages I don't know. So I used C while I still could.
+That's clearly just a warm-up. All the operations are: reading one character/byte at time, comparison, incrementing/decrementing. I could solve it in any programming language I know and possibly in some languages I don't know. So I used C while I still could.
 
 
 ```C

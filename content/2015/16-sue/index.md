@@ -5,8 +5,8 @@ draft: false
 tags: ["python"]
 ---
 
-Appareantly, I have 500 aunts names Sue, some of which have a small herd of pomeranians and samoyeds.
-Plus cats, children, cars etc. I got a present from one of them, using my Crime Scene Analyzer I need
+Apparently, I have 500 aunts named Sue, some of which have a small herd of pomeranians and samoyeds.
+Plus cats, children, cars etc. I got a present from one of them, using my Crime Scene Analyser I need
 to find out which one it was.
 
 I like the story. The puzzle itself is not that interesting, just some basic input file processing

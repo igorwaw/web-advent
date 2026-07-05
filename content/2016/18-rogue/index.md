@@ -1,5 +1,5 @@
 ---
-title: "2016 day 18: Like A Rouge"
+title: "2016 day 18: Like A Rogue"
 date: 2023-05-27T17:32:00
 draft: false
 tags: ["python"]
@@ -11,8 +11,8 @@ them to 1s and 0s for easy calculation.
 
 Instruction says that tile is a trap if one of these conditions is true;
 
-- Its left and center tiles are traps, but its right tile is not.
-- Its center and right tiles are traps, but its left tile is not.
+- Its left and centre tiles are traps, but its right tile is not.
+- Its centre and right tiles are traps, but its left tile is not.
 - Only its left tile is a trap.
 - Only its right tile is a trap.
 

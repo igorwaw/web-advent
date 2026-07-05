@@ -44,7 +44,7 @@ the first disk, so to get the time to release the ball, we need to subtract 1.
 Even though the solution was fast, I wasn't satisfied with it. Sure, for all practical purposes it was OK,
 but AoC is about learning and having fun. I wanted something better.
 
-It was obvious there was no need to check all steps one by one. I made a following thought experiment:
+It was obvious there was no need to check all steps one by one. I made the following thought experiment:
 let's choose the largest disk, say it has 17 positions. Find when it's properly aligned. Then
 from this point, increment time by 17 instead of one and check if other disks aligned. At some point
 one of them is aligned, say it has 3 positions. Next time they are both aligned the same way, is
@@ -55,13 +55,13 @@ I didn't code this solution, because at this point something rang a bell. I grad
 meaning at some point I learned a bit about advanced mathematics: number theory, matrices, differential
 equations, you name it. I then forgot much of it as it was 20 years ago and most of this stuff is not needed
 for the daily work (except once in a blue moon it unexpectedly helps to solve a programming problem). But modulo
-arithmetics appears in a lot of places, prime numbers are a known feature in cryptography. I remember I learned
-something about solving a system of equations in modulo arithmetics with prime numbers. After a few minutes
+arithmetic appears in a lot of places, prime numbers are a known feature in cryptography. I remember I learned
+something about solving a system of equations in modulo arithmetic with prime numbers. After a few minutes
 of searching I found Chinese Remainder Theorem. Yep, that was it.
 
 I'm not going to repeat what others wrote, Wikipedia has a theoretical background: <https://en.wikipedia.org/wiki/Chinese_remainder_theorem>
 and Rosetta Code has example code: <https://rosettacode.org/wiki/Chinese_remainder_theorem>.
-The hard part was calculacting the right residues, it took some trial and error to get rid of inevitable
+The hard part was calculating the right residues, it took some trial and error to get rid of inevitable
 off-by-one and "add or subtract" errors.
 
 ## Code

@@ -6,14 +6,14 @@ tags: ["python"]
 ---
 
 Animated lights, or Conway's Game of Life. As usual, we only need to provide a number for an
-answer, but I couldn't resist making a visualization with Pygame.
+answer, but I couldn't resist making a visualisation with Pygame.
 
 ![screenshot](2015day18.png)
 
-State of each light depends on the state of it's neighbours. But we can't just go through an
+State of each light depends on the state of its neighbours. But we can't just go through an
 array calculating and changing a state of each light, because that would affect the outcome for
 the neighbouring lights. My solution is to have 2 arrays of lights, one source and the other target,
-alternate them every other step. How does it affect the problem size? We have 10 thousands cells and
+alternate them every other step. How does it affect the problem size? We have 10 thousand cells and
 Python's bool is really an integer, so it's quite wasteful, 8 bytes on a 64-bit system, so we have 2 arrays of 80 kB.
 It would be a huge concern on a microcontroller with eg. 64KB of RAM, but on a PC that's nothing.
 

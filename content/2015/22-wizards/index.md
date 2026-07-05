@@ -18,11 +18,11 @@ dataclasses:
 
 The most important game function, **game_round**, uses recursion run a new copy with every possible new spell. The same function covers 2 cases: player round and boss round, so it needs to pass one variable during recursion and make sure it alternates between the two.
 
-Some optimizations to speed up the code:
+Some optimisations to speed up the code:
 
 * I check the game cost (mana spent) and if it's already higher than the best game, that branch is pruned.
 * I also initially set the best game cost to some impossibly high value that I guessed instead of infinity, that way some branches are pruned even before the first won game
-* Stats are ony displayed once every 10 000 games
+* Stats are only displayed once every 10 000 games
 
 It still needs about a minute to go through all possible combinations.
 

@@ -18,9 +18,9 @@ is for Santa, every even one (2, 4, 6...) for the robot. How many houses would b
 
 I decided to rewrite the code and solve a more general problem: not only for 1 and 2 Santas, but for an arbitrary number of Santas.
 For that I created a class Santa with 3 attributes: current coordinates and a set of visited houses. Then, a function called santatour
-creates a list of Santa objects: `santas = [ Santa() for i in range(numsantas)]`. Then I used an instruction counter and modulo arithmetics:
+creates a list of Santa objects: `santas = [ Santa() for i in range(numsantas)]`. Then I used an instruction counter and modulo arithmetic:
 `s=counter%numsantas`, if numsantas equals 2, gives 0 for instruction 0, 2, 4... and 1 for 1, 3, 5. If just one Santa, it always gives 0.
-For numsantas equals 3, it goes 0, 1, 2, 0, 1, 2... etc.
+If numsantas equals 3, it goes 0, 1, 2, 0, 1, 2... etc.
 
 I could just record all visits in one set of visited houses, but again I wanted to solve a more generic problem. Each santa held its own
 record, so I needed to get a **union**. A union of 2 sets contains all elements that belong to any of the sets, in Python you can use a union function

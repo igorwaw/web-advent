@@ -7,8 +7,8 @@ tags: ["python"]
 
 For part 1, we need to sum all numbers in the JSON file. We don't really need to parse JSON,
 just extract all the numbers and sum them. A simple regular expression will do for
-extracting and classic map/reduce for the sum. I usually prefer a longer code for
-redability's sake, but this just asks for putting all the contents of the main loop in
+extracting and classic map/reduce for the sum. I usually prefer longer code for
+readability's sake, but this just asks for putting all the contents of the main loop in
 one line: `result+=sum( map(int, rx.findall(line) ) )`. 
 
 How does it work? `rx.findall(line)` gives a list of all numbers in the line, using the following

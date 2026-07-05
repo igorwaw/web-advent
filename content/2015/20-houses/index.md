@@ -14,7 +14,7 @@ a specified number of presents. And there are several ways.
 
 * Iterate through all house numbers starting from 1. For each house:
 * Iterate through elves - numbers from 1 to house number, let's call that value i
-* Calculate: house number modulo i, if it's equal to 0, that house get 10*i presents
+* Calculate: house number modulo i, if it's equal to 0, that house gets 10*i presents
 
 ```python
         housenumber=0
@@ -51,17 +51,17 @@ Let's reverse the logic:
 house, initial value 0 (that's a few dozen MB, no problem for a PC)
 * Iterate through elves, starting from number 1
 * Iterate through houses, notice that elf number n puts presents in every nth house, starting with house
-number n (eg. elf number ten starts with house 10, than goes to 20, 30 etc.) - which means we don't need
+number n (eg. elf number ten starts with house 10, then goes to 20, 30 etc.) - which means we don't need
 to start with house 1, increment by 1 and do a modulo operation, instead we can use a proper initial value
 and step in the loop, massively speeding up the calculation
 * For every visited house, increase the number of presents by 10*elf number
-* Finally, iterate through the list of houses and find index of the first one that meets our criteria.
+* Finally, iterate through the list of houses and find the index of the first one that meets our criteria.
 
 ### Use maths
 
 Not the solution I would find by myself, since I'm more into loops and data structures than divisors and such
-stuff. Just for completeness: each house gets 10 presents if it's number is divisible by the elf's number.
-So, total number of presents equals to 10 times sum of all house number's divisors (including trivial divisors).
+stuff. Just for completeness: each house gets 10 presents if its number is divisible by the elf's number.
+So, total number of presents equals 10 times sum of all house number's divisors (including trivial divisors).
 
 ## Code
 

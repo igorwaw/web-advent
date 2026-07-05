@@ -8,31 +8,31 @@ tags: ["python"]
 ## Part 1
 
 Finding a path in a vault. At this point I wrote so many programs to find
-a shortest path in a 2D grid, I could probably do it in my sleep. There is
-a slight twist: a set of doors open/closed depends on the hash of path taken.
+the shortest path in a 2D grid, I could probably do it in my sleep. There is
+a slight twist: a set of doors open/closed depends on the hash of the path taken.
 That means there's no need to store "already visited states" as I usually do
 for BFS: even if I enter the same place again, different doors are open so it
 is a different state. And there's really no smart way to solve it, bruteforcing
 the solution is the only way.
 
-So, at each step we get a hash of current path, we only need first 4 characters:
+So, at each step we get a hash of the current path, we only need the first 4 characters:
 `hashlib.md5(i.encode()).hexdigest()[:4]`. Each character describes one door,
 they also have coordinates relative to the current place (eg. 0,-1 for up).
 We iterate on those: `for (door, direction) in zip(doorhash,DIRECTIONS):`
-If that direction is not out of range and door is open - yield it, add to the
+If that direction is not out of range and the door is open - yield it, add to the
 queue.
 
 When we reach the end point, break the loop and check the length of the path.
 
 ## Part 2
 
-So now we need to find shortest and longest path. That's just a simple modification.
+So now we need to find the shortest and longest path. That's just a simple modification.
 When we reach the end point, don't break the loop, instead append the path to the list
 of possible paths.
 
 In the end, just find the shortest and longest string in the list of paths. Python's
 usual min and max functions can do that with just one extra argument `key=len` - meaning
-it will run `len()` function on each element and use its result as a key for comparison.
+it will run the `len()` function on each element and use its result as a key for comparison.
 
 ## Code
 

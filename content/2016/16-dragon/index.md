@@ -6,7 +6,7 @@ tags: ["python"]
 ---
 
 We need to generate data that would fill a disk of a specific size,
-than calculate the checksum. Algorithm for generating and for checksum
+then calculate the checksum. Algorithm for generating and for checksum
 is described, unusual but nothing complicated.
 
 For part 1, disk has a size 272 and for part 2: 35651584. This year, many
@@ -15,7 +15,7 @@ made a problem space much bigger, requiring a clever solution. If that was
 supposed to be one of them, it didn't work. Sure, I guess there is a way
 to calculate the checksum without actually generating and then iterating
 over 35 million characters. But my program runs in 7 seconds and uses less
-RAM then the editor I used to write it.
+RAM than the editor I used to write it.
 
 ```python
 #!/usr/bin/python3

@@ -14,7 +14,7 @@ Part 2 is annoying, in a similar way to the previous puzzle: I can't code a univ
 solution. The code for part 1 works, but is too slow: instruction suggests we should
 implement a multiply instruction. In the input file there are two blocks that increment
 register many times, there's an inner loop with jnz -2 and outer loop with jnz -5.
-The end result is very fast (few miliseconds, while unoptimized code didn't find the
+The end result is very fast (few milliseconds, while unoptimized code didn't find the
 solution in 30 minutes) but also very fragile - it would fail with another input file,
 where jnz -5 is preceded by some other instructions. But coding a real optimizer is well
 outside the scope of a puzzle.

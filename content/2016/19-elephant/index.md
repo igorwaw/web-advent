@@ -22,9 +22,9 @@ part 1.
 
 ## Part 2
 
-There are generalized Josephus solutions for finding survivor with a group
+There are generalized Josephus solutions for finding a survivor with a group
 of size n with a step of k. So, if we modify k at each step to be
-number_of_remaining _elves//2, that would work, right? Wrong. Well, it *should*
+number_of_remaining_elves//2, that would work, right? Wrong. Well, it *should*
 work, probably I made some off-by-1 errors or something like that, but I couldn't
 make it right.
 
@@ -55,9 +55,9 @@ Instead, I checked the answer on paper for some low numbers to try and find a pa
 
 One elf keeps its present. If there are 2, first one wins. That's just a special case that
 needs to be dealt with `if n<3`. What do we have next? For 3 and 9 we're getting 3 and 9.
-These numbers are powers of 3. Concidence?
+These numbers are powers of 3. Coincidence?
 
-So for our number of elves, we need to find the nearest power of 3 that's smaller then that.
+So for our number of elves, we need to find the nearest power of 3 that's smaller than that.
 Logarithm will give us the exponent (hey, I still remember something from high school maths!)
 and luckily Python has a function for calculating logarithm with an arbitrary base, not
 only natural logarithm like many languages. That saved me a terrible burden of replacing a base-3
@@ -69,7 +69,7 @@ closestpower=3**base
 ```
 
 Then, for the next few steps, we're just getting one element away from the nearest power of 3.
-After that, something happens. We're not moving by 1, but by 2? Some more trial end error
+After that, something happens. We're not moving by 1, but by 2? Some more trial and error
 coding got me at `2*n-3*closestpower` and I have to admit I have no idea why, must be something
 to do with maths, but it works.
 

@@ -61,7 +61,7 @@ get_next_points function.
 
 ## Getting next points
 
-We can move left, right, up or down from the current point - that's -1 or +1. We can't go diagonaly
+We can move left, right, up or down from the current point - that's -1 or +1. We can't go diagonally
 and also we don't want to return the current point. So, x can be -1 or 1 while y is 0, or vice versa.
 The easiest way to write it is:
 
@@ -79,8 +79,8 @@ We also need to skip walls: `if not is_empty(newpoint): continue`
 ## Recording distance
 
 - starting point has a distance of 0 from the starting point (obviously)
-- all other points are initialized with infinity (in practice, a value much larger then expected will do)
-- new point gets a distance 1 larger then the previous point, but here's an important thing: only if it's smaller then the previously recorded distance (we can get to a point more than once and we're only interested in the shortest path)
+- all other points are initialized with infinity (in practice, a value much larger than expected will do)
+- new point gets a distance 1 larger than the previous point, but here's an important thing: only if it's smaller than the previously recorded distance (we can get to a point more than once and we're only interested in the shortest path)
 
 I used a dict of Points to keep distances and wrapped them in a class for convenience. I later added a function that prints
 the map.

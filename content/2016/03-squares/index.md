@@ -5,8 +5,8 @@ draft: false
 tags: ["python"]
 ---
 
-We have list of triangles, or "triangles", and we need to find which ones are possible.
-In euclidean geometry, that is, not something from Cthulhu mythos. Easy. Slight twist for
+We have a list of triangles, or "triangles", and we need to find which ones are possible.
+In Euclidean geometry, that is, not something from Cthulhu mythos. Easy. Slight twist for
 part 2 - the dimensions are given in columns, not in rows.
 
 ```python

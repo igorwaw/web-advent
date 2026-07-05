@@ -3,7 +3,7 @@ title: "Advent of Code"
 comments: false
 ---
 
-[Advent of Code](https://adventofcode.com/) is a serious of programming puzzles published every December since 2015. Every day, from 1st to 25th, you'll get a 2-part programming challenge. It's a great way to improve your programming skills, maybe learn a new language or new tricks in the one you already know. Each year the challenges start simple, but after a few days they become, well, challenging. What's important it's they are quite fun - unlike other programming puzzles I tried in the past, they don't focus too much on maths and theoretical CS, and they are linked by a story.
+[Advent of Code](https://adventofcode.com/) is a series of programming puzzles published every December since 2015. Every day, from 1st to 25th, you'll get a 2-part programming challenge. It's a great way to improve your programming skills, maybe learn a new language or new tricks in the one you already know. Each year the challenges start simple, but after a few days they become, well, challenging. What's important it's they are quite fun - unlike other programming puzzles I tried in the past, they don't focus too much on maths and theoretical CS, and they are linked by a story.
 
 ## Editions
 
@@ -34,11 +34,11 @@ Other modern languages like JavaScript, Ruby, Go or Rust would work too, but I d
 
 ## Getting help
 
-Is it OK to look at someone elses code? In my opinion, AoC is about two things: learning and having fun. If you're stuck, you get none.
-Looking at someone's code and implementing similar solution at least allows you to learn, and then you're free to go on to other tasks.
+Is it OK to look at someone else's code? In my opinion, AoC is about two things: learning and having fun. If you're stuck, you get none.
+Looking at someone's code and implementing a similar solution at least allows you to learn, and then you're free to go on to other tasks.
 
 Personally, I always tried to solve the tasks by myself first and in most cases, I managed. Even then I later googled for
 other solutions to see possible improvements. Every year, there are some really hard puzzles that you can't solve without
-knowing the right algorithm or math trick.
+knowing the right algorithm or maths trick.
 
-One good source are Reddit threads, they generally show up as a first Google result for "advent of code year 20xx day yy". An even better source, and an inspiration for my site, is [Dazbo’s Advent of Code Walkthroughs](https://aoc.just2good.co.uk/).
+One good source is Reddit threads, they generally show up as a first Google result for "advent of code year 20xx day yy". An even better source, and an inspiration for my site, is [Dazbo’s Advent of Code Walkthroughs](https://aoc.just2good.co.uk/).

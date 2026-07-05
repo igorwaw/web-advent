@@ -8,10 +8,10 @@ tags: ["python"]
 ## Part 1
 
 We need a medicine for Rudolph. We've got a starting molecule and a list of possible replacements. First part was too easy: calculate how many
-molecules can be made with a single replacements. Tricky bits are:
+molecules can be made with a single replacement. Tricky bits are:
 
 * when creating new molecule, I added them to the set and checked the set's length, that way I filtered out duplicate results,
-* I had to use a tricky way to replace first, second..., nth occurence.
+* I had to use a tricky way to replace first, second..., nth occurrence.
 
 
 ## Part 2
@@ -22,16 +22,16 @@ molecule to the electron. And a proper parser should help. I could write them wh
 happily forgot them and hope to never need them again. I'm OK with regexps and such, but I run away screaming
 when I hear about CNF, context-free grammar and so on.
 
-Some people had luck with a randomized brute-force search: try to apply all the replacement rules, if a dead-end
+Some people had luck with a randomised brute-force search: try to apply all the replacement rules, if a dead-end
 was reached, shuffle the rules and try again. They said they reached a single electron in only a few shuffles.
-I allowed for 200 thousands and only got some short molecules that couldn't be reduced any further.
+I allowed for 200 thousand and only got some short molecules that couldn't be reduced any further.
 
 I also tried some order in my replacements. I noticed there are different types of rules: some duplicate the
 element, some generate a group containing Rn, Ar and something in between. Some generate an element from
 an electron. I tried running them in different orders, trying to eliminate longer pieces first. Reached a dead
 end every time.
 
-In desperation, I based my solution on the analisys by CdiTheKing: <https://www.reddit.com/r/adventofcode/comments/3xflz8/comment/cy4h7ji/?utm_source=share&utm_medium=web2x&context=3>
+In desperation, I based my solution on the analysis by CdiTheKing: <https://www.reddit.com/r/adventofcode/comments/3xflz8/comment/cy4h7ji/?utm_source=share&utm_medium=web2x&context=3>
 
 It feels like cheating because I barely understand the reasoning and couldn't reach it myself. But I don't want
 to spend more time on the puzzle that's no fun.

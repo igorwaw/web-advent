@@ -5,11 +5,11 @@ draft: false
 tags: ["python"]
 ---
 
-Puzzle description is a long and quite convoluted. We need to move some Radioisotope Thermoelectric Generators
+Puzzle description is long and quite convoluted. We need to move some Radioisotope Thermoelectric Generators
 and microchips to the fourth floor. Generators emit radiation which will damage the microchip on the same floor,
 unless the chip is connected to a corresponding generator. Elevator can take one or two devices (won't go empty).
 
-It's one of the tough ones. I tried to solved it myself, got stuck and searched for solutions.
+It's one of the tough ones. I tried to solve it myself, got stuck and searched for solutions.
 Then I combined some parts of <https://eddmann.com/posts/advent-of-code-2016-day-11-radioisotope-thermoelectric-generators/>
 with what I wrote before (or what I decided to do in a different way).
 
@@ -77,9 +77,9 @@ functions operating on it. But I decided that a list of sets is good enough.
 
 * If there's no generator on the floor, there's no radiation, so all chips are safe,
 * If there are no microchips on the floor, the radiation won't harm anything,
-* If there are both chips and generators on the floor, every chip needs to have a coresponding generator
+* If there are both chips and generators on the floor, every chip needs to have a corresponding generator
 
-First condition is easy to check. Second condition will be checked implicitly by the third condtion
+First condition is easy to check. Second condition will be checked implicitly by the third condition
 (we're iterating over microchips, if there are none, there's nothing to iterate on). But the third
 one is tricky. Now, it was easy when I had a separate list of chips and generators:
 
@@ -148,7 +148,7 @@ in itertool called chain that combines iterators.
 
 Next, we need to copy the gamestate. In the new object, we have to modify two floors: remove object from one
 and add them to the other one. We have sets, which have functions just for this. Finally, we need to check
-if those two floors are stil valid.
+if those two floors are still valid.
 
 ## Checking the end condition
 
@@ -235,7 +235,7 @@ add them to the queue: `queue.append(next_state)`. And of course, at every itera
 ## Part 2
 
 Second part is the same algorithm, we're just adding 4 more devices to the data structure. All it did was increasing calculation
-time 5s to 37s.
+time from 5s to 37s.
 
 ## Code
 

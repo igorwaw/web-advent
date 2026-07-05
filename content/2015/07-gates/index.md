@@ -20,7 +20,7 @@ with a delay at every step.
 ## Parsing input
 
 This puzzle gave me some trouble with input parsing. First I borrowed the solution from <https://aoc.just2good.co.uk/2015/7> and
-used the Parsimonious library because I wanted to get to the visualization quickly. It worked, but I wanted to have my own parser,
+used the Parsimonious library because I wanted to get to the visualisation quickly. It worked, but I wanted to have my own parser,
 no cheating. So I rewrote it using only string splitting and comparisons. It also worked, but it was long and there was some code
 repetition. Next, I used match/case. Much better! There's still some repetition, but "good enough" beats "perfect".
 
@@ -37,13 +37,13 @@ except ValueError:
 ```
 
 It's not an error that the value can't be converted, it's a completely normal case (in fact, the "exceptional" case happens more
-often then the "standard" case). C++ or Java developers would shudder at such design, but in Python culture it's considered OK.
+often than the "standard" case). C++ or Java developers would shudder at such design, but in Python culture it's considered OK.
 Maybe the reason is exceptions make programs slower in many languages, in Python there's not much difference (it's slow anyway...)
 
 ## Python feature: match/case
 
 **Structural pattern matching** was a new feature of Python 3.10. At a first glance, it's similar to switch/case instructions you
-might aready know from other languages such as C:
+might already know from other languages such as C:
 
 ```python
 match argument:
@@ -55,15 +55,15 @@ match argument:
         raise ValueError
 ```
 
-Nothing wrong in using it this way, it's slightly shorter and more readable then a long chain of if/else instructions.
-But that's only about 1% of what it can do, I've yet to learn all the posibilities. So far I know how to:
+Nothing wrong in using it this way, it's slightly shorter and more readable than a long chain of if/else instructions.
+But that's only about 1% of what it can do, I've yet to learn all the possibilities. So far I know how to:
 
 * match strings (obviously),
 * assign variables while checking,
 * check type of the matched argument,
 * if the argument is a tuple, check how many elements it contains.
 
-All of that while being more readable then the code written without this feature. In fact, probably
+All of that while being more readable than the code written without this feature. In fact, probably
 more readable than my attempt to explain it. Here's the relevant part of the code:
 
 ```python
@@ -77,21 +77,21 @@ more readable than my attempt to explain it. Here's the relevant part of the cod
 Variable instr contains one instruction from the input file, the part before the -> delimiter, eg. "e OR f -> g",
 "NOT dm -> dn". I then split it, assign the tuple to splitinstr and check the cases.
 
-First two cases are 3-element tupples. If the middle element contains LSHIFT or RSHIFT, it call process_shift function,
+First two cases are 3-element tuples. If the middle element contains LSHIFT or RSHIFT, it calls process_shift function,
 "AND" or "OR" call process_andor. In both cases, first and third element are assigned to arg1 and arg2 respectively.
-Next, a 2-element tupple, first a string "NOT" and then any value of any type, that gets assigned to arg1. Finally,
+Next, a 2-element tuple, first a string "NOT" and then any value of any type, that gets assigned to arg1. Finally,
 the default case. If it wasn't any of the 5 logical operations, it must be assignment. It's a puzzle with known
-input, for the real production code I would check the input more carefuly.
+input, for the real production code I would check the input more carefully.
 
 
 
-## Visualization
+## Visualisation
 
 Curses library forces a specific program structure. Everything that uses curses needs to be placed in one function (by convention, called main)
 which takes *stdscr* as an argument, and stdscr is the main curses window that covers the entire screen. This function is then called with
 `curses.wrapper(main)`. Or specifically, that's not the only way to run curses program, but it's the most convenient.
 
-Curses allow to build quite sophisticated text-mode user interfaces, but I only use it for one thing: print text in a specific place on the
+Curses allow you to build quite sophisticated text-mode user interfaces, but I only use it for one thing: print text in a specific place on the
 screen. I start at the top left corner: `outx=0` `outy=0` then I move right by the colum width: `outx+=COLWIDTH` which I found experimentally,
 large enough to fit the longest instruction and keep some space from the next column. If I'm too close to the screen's edge, I move to the
 next row and back to the left, the library provides screen width in curses.COLS:
@@ -102,9 +102,9 @@ next row and back to the left, the library provides screen width in curses.COLS:
             outy+=1
 ```
 
-I also highlighted some values using a different output format. Curses allow changing foreground and background color and also setting
-attributes such as bold or blink. I simpy used `curses.color_pair(1)` - color pairs can be user defined but have a default value,
-and I didn't care what colors are used as long as they are different then the default.
+I also highlighted some values using a different output format. Curses allow changing foreground and background colour and also setting
+attributes such as bold or blink. I simply used `curses.color_pair(1)` - colour pairs can be user defined but have a default value,
+and I didn't care what colours are used as long as they are different than the default.
 
 ## Code
 

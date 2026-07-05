@@ -8,25 +8,25 @@ tags: ["python"]
 ## Part 1
 
 We've got 1 million lights in a 1000x1000 grid and instructions to turn on/turn off/toggle some lights. The puzzle only requires
-to count how many lights are on, but I couldn't resist the temptation to add visualization. I used Pygame library, or rather a
+to count how many lights are on, but I couldn't resist the temptation to add visualisation. I used Pygame library, or rather a
 very small subset of it: drawing rectangles, drawing single pixels, waiting for event (just one - quit) and delay.
 
 ![screenshot](2015day6.png)
 
-Light grid is stored in a 2D array, initialized with zeroes using nested comprehensions: `lights = [[0 for _ in range(WIDTH)] for _ in range(HEIGHT)]`.
+Light grid is stored in a 2D array, initialised with zeroes using nested comprehensions: `lights = [[0 for _ in range(WIDTH)] for _ in range(HEIGHT)]`.
 Another notable thing is how I counted the lights: `lit=sum(map(sum,lights))`. The inner function `map(sum,lights)` returns a list containing
 sums of each row, and the outer sum just sums it.
 
 Input processing is very simple this time, splitting on space or comma was all that was needed: `elems=re.split(r'\s|,', cmd)`. Then I call a command
 rect_on or rect_off which sets some elements to 0 or 1 using nested loops and also calls a pygame function to draw rectangle; rect_toggle is similar
 but needs to work on single pixels. Some might say that using loops here is non-pythonic and I should have used list comprehension. In my opinion
-comprehension for 2D arrays is not very readable. It's faster, but I needed to slow down the code for visualization anyway.
+comprehension for 2D arrays is not very readable. It's faster, but I needed to slow down the code for visualisation anyway.
 
 ## New Python feature: walrus operator
 
 **Walrus operator :=** was introduced in Python 3.7. A common source of frustration for C programmers is mistaking comparison
 with assignment: `if (i=5)` assigns the value and is probably not what the developer intended. However, `if ( i=some_function() )`
-is likely valid, it both assigns the value and checks if it's true. Python, like many modern languages, initialy solved the problem
+is likely valid, it both assigns the value and checks if it's true. Python, like many modern languages, initially solved the problem
 by separating those operations. Which means I would have to do:
 
 ```python
@@ -34,7 +34,7 @@ line = inputfile.readline().rstrip()
 if (line):
 ```
 
-instead of `if (line := inputfile.readline().rstrip()):`. Walrus operator allows to combine those two again, and since it's
+instead of `if (line := inputfile.readline().rstrip()):`. Walrus operator allows you to combine those two again, and since it's
 neither = nor ==, it can't be easily mistaken. In this case there's not much difference. But walrus operator makes the code
 not only shorter but more readable when placed in a loop statement or list comprehension. Example without and with walrus operator:
 
@@ -147,13 +147,13 @@ with open(INPUTFILE) as inputfile:
 ## Part 2
 
 It turns out the lights have many levels of brightness, "on" really means
-"inrease by 1", off - "decrease by one" and toggle - "increase by 2". Of course
+"increase by 1", off - "decrease by one" and toggle - "increase by 2". Of course
 it does.
 
 Unusually, I decided to put part 2 into a separate file. I also changed the 
-visualization, instead of updating screen after each instruction, I do it only
+visualisation, instead of updating screen after each instruction, I do it only
 once, at the end of the program. Updating at every step would really slow down
-the calcultion as there are many cases of controlling individual pixels and this is slow
+the calculation as there are many cases of controlling individual pixels and this is slow
 in Pygame.
 
 

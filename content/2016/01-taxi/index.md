@@ -8,7 +8,7 @@ tags: ["python"]
 Title is a reference to a Taxicab Metric, but you don't even need to know what's that.
 As usual, first days of Advent of Code are simple.
 
-We're moving on a 2D grid. We need to keep track of visited point, set is an obvious structure
+We're moving on a 2D grid. We need to keep track of visited points, a set is an obvious structure
 for it. I used an immutable dataclass for point, though a simple tuple of 2 ints would do.
 
 ```python

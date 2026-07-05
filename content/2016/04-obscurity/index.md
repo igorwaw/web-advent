@@ -11,7 +11,7 @@ descending by value, then ascending by key: `sorted(lettercounter, key=lambda x:
 Get it? Let's start from the inside. We define a lambda function for key, it returns a tuple.
 x[1] is the value, - for reversing the sort order. Then x[0] is the key.
 
-Part 2 was a simple cypher - addition, subtraction and modulo is all that's needed.
+Part 2 was a simple cypher - addition, subtraction and modulo are all that's needed.
 
 ```python
 #!/usr/bin/python3

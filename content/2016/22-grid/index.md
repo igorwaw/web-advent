@@ -5,7 +5,7 @@ draft: false
 tags: ["python"]
 ---
 
-We have a cluster of storage nodes organized in a grid and we need to move
+We have a cluster of storage nodes organised in a grid and we need to move
 data from one specific node to an access node. First thing, 
 data structures. I decided to have a dataclass for each node, storing position
 in a grid and used/available/total disk space. Then a list of nodes (we don't
@@ -28,7 +28,7 @@ maths - and strong points of human: pattern recognition. First, I printed the gr
 There is only one empty node. Which means we need to move the "hole" next to the
 node we're interested in. In my case, it happens to be last but one node on
 the last row. So I would simply move it up (1 step for each row), except there
-are also a few nodes much larger then the rest, that can't be copied. They form
+are also a few nodes much larger than the rest, that can't be copied. They form
 a "wall" which we need to pass to the left and then go back to the right.
 
 Finally, we need to move the data using the empty node, then move the empty node

@@ -5,8 +5,8 @@ draft: false
 tags: ["python"]
 ---
 
-We're generating password by making a lot of md5 hashes and extracting specific characters. Nothing special, there's a handy md5 function
-in hashlib module from the standard library. For part 2, I store the password as an array of characters, not string (one thing that would
+We're generating a password by making a lot of md5 hashes and extracting specific characters. Nothing special, there's a handy md5 function
+in the hashlib module from the standard library. For part 2, I store the password as an array of characters, not string (one thing that would
 be easier in C...), convert on printing. Looks a bit messy, but makes it easier to insert characters at a specific position.
 
 ```python

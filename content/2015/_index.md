@@ -6,8 +6,8 @@ comments: false
 
 First edition. Santa wants to run a weather machine that is powered by stars.
 We're helping him by collecting stars for solving puzzles. Which are mostly related
-to presents, elves and reindeers. There's no big story arc (some short ones though)
-and the puzzles are generally easier then in the later years, but you can still find
+to presents, elves and reindeer. There's no big story arc (some short ones though)
+and the puzzles are generally easier than in the later years, but you can still find
 some hard ones. I struggled with day 22 and only solved day 19 with help.
 
 - [Day 1: Not Quite Lisp](/2015/01-not-quite-lisp/)

@@ -9,7 +9,7 @@ We have a series of instructions for the screen and need to interpret
 them. Emulating strange hardware is my favourite part of Advent of Code.
 But this one was too simple.
 
-I used Numpy. One of the instructions is rotate, Numpy provides function
+I used Numpy. One of the instructions is rotate, Numpy provides a function
 "roll" that does just that. I also packed most of the code in a class.
 Both aren't really needed for a simple task like this.
 

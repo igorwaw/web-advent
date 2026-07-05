@@ -8,7 +8,7 @@ tags: ["python"]
 We are given a list of distances between several cities. Santa needs to visit all of them exactly once
 using shortest (part 1) and longest (part 2) route possible.
 
-What a gentle introduction to graph theory! Every computer science graduate will instantly recognize
+What a gentle introduction to graph theory! Every computer science graduate will instantly recognise
 it as a Travelling Salesman Problem. It's a well known problem with many real-world applications - not
 only the obvious one of finding a shortest route between cities, but also about placing data in the compute
 cluster, and optimal use of pretty much everything, from storage shelves to industrial robots. It's
@@ -19,10 +19,10 @@ Luckily, we only have 7 cities, 7! is only 5040. There's no need to implement an
 So, it's Python again with no special libraries (C++ with the usual STL containers would also work):
 
 * read input file, parse lines (just two split(), nothing fancy)
-* we need 3 data structures: set of cities, dict of distances between cities (both initialized from the input data)
+* we need 3 data structures: set of cities, dict of distances between cities (both initialised from the input data)
 and list of route lengths, initially empty (note that we only need to store the distance, not the route)
 * iterate through all permutations of cities
-* for each permutations, get the distances from the dict, sum them up, store in the list of route lengths
+* for each permutation, get the distances from the dict, sum them up, store in the list of route lengths
 * and just get the smallest/largest number from the list
 
 ## New language feature: itertools
@@ -50,15 +50,15 @@ and `permutations(cities)` will generate an iterable object containing:
 ('Tristram', 'Snowdin', 'Tambi', 'Faerun', 'Arbre', 'Straylight', 'Norrath', 'AlphaCentauri')
 ```
 
-## Possible optimizations
+## Possible optimisations
 
-* No need to store the length of every route, we only need to store it if it's shortest/longest then the previous ones.
+* No need to store the length of every route, we only need to store it if it's shorter/longer than the previous ones.
 * Every route has the same length in both directions, while the code generates all permutations. So, for
 the example data we check Dublin -> London -> Belfast and Belfast -> London -> Dublin. We could cut
 the problem size in half by filtering out those.
 
-Those improvements would only save a few hundreds bytes of RAM and have negligible effect on time (and I'm not even sure which
-way - there's less computation but some extra comparisons) so I skipped the premature optimizations.
+Those improvements would only save a few hundred bytes of RAM and have negligible effect on time (and I'm not even sure which
+way - there's less computation but some extra comparisons) so I skipped the premature optimisations.
 
 ## Code
 

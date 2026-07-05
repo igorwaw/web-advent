@@ -26,10 +26,10 @@ of boilerplate code. You can then add methods just like to a standard class, eve
 the automatically generated methods if they're not suitable.
 
 But wait, there's more! There are parameters for the decorator, though not needed here I'll
-decribe them briefly:
+describe them briefly:
 
-* `@dataclass(order=True)` generates method for comparison operators (<,>, <=, >=), allows to sort the objects,
-* `@dataclass(frozen=True)` makes the object immutable, which among other things causes to generate a __hash function, meaning the object can be added to a dictionary or set.
+* `@dataclass(order=True)` generates methods for comparison operators (<,>, <=, >=), allows you to sort the objects,
+* `@dataclass(frozen=True)` makes the object immutable, which among other things causes it to generate a __hash function, meaning the object can be added to a dictionary or set.
 
 
 ## Code

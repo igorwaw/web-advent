@@ -6,15 +6,15 @@ tags: ["python"]
 ---
 
 Easy one for a change: a part of a very simple RPG game. I used Python and some basic OOP to encapsulate
-data. The player has to use a weapon, can use an armor and up to 2 rings. My design decisions:
+data. The player has to use a weapon, can use an armour and up to 2 rings. My design decisions:
 
-* weapon, armor and rings are all objects of the same class - GameItem
-* all 4 equipment slots are obligatory to simplify the design, I just added armor and ring of type "none"
+* weapon, armour and rings are all objects of the same class - GameItem
+* all 4 equipment slots are obligatory to simplify the design, I just added armour and ring of type "none"
 
-We need to find the lowest cost of equipment that would win the fight. Easy, there's only 1290 combinations
+We need to find the lowest cost of equipment that would win the fight. Easy, there are only 1290 combinations
 so we can just use brute force: generate 1290 players, make them all fight with the boss, create a list of
 cost for the winning players and find a minimum of that list. These are all very fast operations (integer addition,
-subtraction and comparison) so it all runs in just some miliseconds.
+subtraction and comparison) so it all runs in just some milliseconds.
 
 ```python
 #!/usr/bin/python3

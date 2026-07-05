@@ -6,7 +6,7 @@ tags: ["python"]
 ---
 
 The elves ordered too much eggnog. I need to store it in the containers. 
-Container capacities are gives as the puzzle input.
+Container capacities are given as the puzzle input.
 
 So it's combinatorics again. Actually easier than the previous ones.
 

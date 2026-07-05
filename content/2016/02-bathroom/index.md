@@ -7,7 +7,7 @@ tags: ["python"]
 
 2D grid with a twist. I wrote a simple solution using way too many elifs.
 Could be made a bit shorter by using hexadecimal numbers. Or much shorter
-by using a loopup table. But I didn't bother, let's go to the more interesting
+by using a lookup table. But I didn't bother, let's go to the more interesting
 tasks.
 
 ```python

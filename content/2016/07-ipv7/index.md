@@ -12,7 +12,7 @@ I used two different methods. For part 1 - the obvious way, regular expressions 
 I hate them, though I seem to be getting better at them.
 
 But I couldn't write the right regexp for part 2. Instead, I found it easier to do some C-style coding in Python:
-process string as a character array and use a very simple state machine (with just 2 states: inside and
+process the string as a character array and use a very simple state machine (with just 2 states: inside and
 outside the square brackets). I'm looking for all ABA blocks, store them in two sets (actually I just store AB),
 separately for inside and outside square brackets. Then it's just checking if the two sets have any elements in common.
 The important thing is to reverse characters for one of the sets.

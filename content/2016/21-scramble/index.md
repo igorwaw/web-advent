@@ -11,7 +11,7 @@ We need to scramble a password according to a list of instructions. Easy.
 First I parse the list of instructions with my favourite match/case. For
 every instruction there's a simple function. There are operations such as
 swapping letters or rotating the string. All of them can be done with
-some string slicing and concatenation. Other then some annoying of-by-one
+some string slicing and concatenation. Other than some annoying off-by-one
 errors in indexing, very simple.
 
 

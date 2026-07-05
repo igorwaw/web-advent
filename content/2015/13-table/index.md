@@ -5,8 +5,8 @@ draft: false
 tags: ["python"]
 ---
 
-We need to find optimal seating arrangement for the family. Everyone has their happines
-increased or decreased based on who they sit next to. We need to maximize total happines.
+We need to find optimal seating arrangement for the family. Everyone has their happiness
+increased or decreased based on who they sit next to. We need to maximise total happiness.
 
 Although it doesn't look like that, it's a similar puzzle to day 9, Travelling Santa
 Problem. So similar that most of my code was actually a copy-paste. Again, it would require
@@ -21,7 +21,7 @@ to sum up happiness from A to B and from B to A, B to C and C to B etc.
 * the table is round, so you have to also add happiness between last person and first
 person - the easiest way is to add the first person again at the end.
 
-Possible optimizations: similar to day 9, you can skip sitting arrangements that are
+Possible optimisations: similar to day 9, you can skip sitting arrangements that are
 the reverse of another sitting arrangement, but I didn't bother as the program was fast
 enough. Though I can clearly see how it grows with the size of the dataset: on an old
 laptop it took 0.2s for the first part and 1.4s for the second part with one extra

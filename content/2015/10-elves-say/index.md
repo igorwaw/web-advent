@@ -6,7 +6,7 @@ tags: ["python"]
 ---
 
 We're checking how fast look-and-say sequence grows. I've never heard of it and it doesn't
-look particularly useful, but appareantly it has some uses in number theory and was analyzed
+look particularly useful, but apparently it has some uses in number theory and was analysed
 by the famous John Conway. Wikipedia explains:
 
 To generate a member of the sequence from the previous member, read off the digits of the previous member, counting the number of digits in groups of the same digit. For example:
@@ -29,7 +29,7 @@ If it's different - construct the part of the result as "streak length" and "pre
 When the loop ends, do the same construction again. Special case: string of length 1.
 Remember to convert integers to strings when needed. And that's it.
 
-Not the prettiest code as there's some repetition, but it's readable and resonably fast.
+Not the prettiest code as there's some repetition, but it's readable and reasonably fast.
 
 
 ```python
